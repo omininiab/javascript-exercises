@@ -11,15 +11,15 @@ function sum(x) {
 }
 
 function multiply(x) {
-	return x.reduce((a,b)=>a*b);
-  }
+  return x.reduce((a, b) => a * b);
+}
 
 function power(a, b) {
   return a ** b;
 }
 
 function factorial(x) {
-  return x==0 ? 1 : multiply([...Array(x + 1).keys()].slice(1));
+  return x == 0 ? 1 : multiply([...Array(x + 1).keys()].slice(1));
 }
 
 module.exports = {
